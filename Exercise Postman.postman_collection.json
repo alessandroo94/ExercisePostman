@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "c00673e6-f133-4ff7-a1ec-e5be90b6faff",
+		"name": "Exercise Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26124894"
+	},
+	"item": [
+		{
+			"name": "Free Cocktail DB search a cocktail by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita",
+					"protocol": "https",
+					"host": [
+						"www",
+						"thecocktaildb",
+						"com"
+					],
+					"path": [
+						"api",
+						"json",
+						"v1",
+						"1",
+						"search.php"
+					],
+					"query": [
+						{
+							"key": "s",
+							"value": "margarita"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Free CocktailDB search a cocktail by ingredients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.thecocktaildb.com/api/json/v1/1/search.php?i=rum",
+					"protocol": "https",
+					"host": [
+						"www",
+						"thecocktaildb",
+						"com"
+					],
+					"path": [
+						"api",
+						"json",
+						"v1",
+						"1",
+						"search.php"
+					],
+					"query": [
+						{
+							"key": "i",
+							"value": "rum"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://dummy.restapiexample.com/api/v1/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"John\",\r\n     \"salary\": \"40000\",\r\n      \"age\":\"35\"\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dummy.restapiexample.com/api/v1/create",
+					"protocol": "https",
+					"host": [
+						"dummy",
+						"restapiexample",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agify.io ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.agify.io?name[]=Lucy&name[]=Bob&name[]=Alice",
+					"protocol": "https",
+					"host": [
+						"api",
+						"agify",
+						"io"
+					],
+					"query": [
+						{
+							"key": "name[]",
+							"value": "Lucy"
+						},
+						{
+							"key": "name[]",
+							"value": "Bob"
+						},
+						{
+							"key": "name[]",
+							"value": "Alice"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
